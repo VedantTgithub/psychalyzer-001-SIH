@@ -1,19 +1,16 @@
-# psychalyzer-001-SIH
-## Introduction
-Psychalyzer is a comprehensive software solution designed to monitor, assess, and track the mental health and well-being of children. It aims to provide caregivers, parents, and counselors with valuable insights into a child's emotional and mental state. By leveraging standardized questionnaires commonly used by professionals, Psychalyzer offers personalized guidance based on the user's responses.
+# psychalyzergpt
 
-## Features
-### Standardized Questionnaires: 
-- Utilize a library of standardized questionnaires commonly employed by mental health professionals.
+A new Flutter project.
 
-## User Evaluation: 
-- Assess a child's mental health based on their responses to the quizzes.
+## Getting Started
 
-## Personalized Guidance: 
-- Offer tailored recommendations and guidance to caregivers based on evaluation results.
+This project is a starting point for a Flutter application.
 
-## Counselor Involvement: 
-- Counselors can assign quizzes to both parents and children, facilitating a comprehensive assessment.
+A few resources to get you started if this is your first Flutter project:
 
-## Scoring and Reporting: 
-- Generate scores and graphical reports for analysis, enabling the identification of potential disorders and personality traits.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

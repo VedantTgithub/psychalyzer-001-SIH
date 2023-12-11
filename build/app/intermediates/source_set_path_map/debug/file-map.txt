@@ -21,5 +21,6 @@ com.example.psychalyzergpt.app-mergeDebugResources-19 C:\Users\ASUS\Desktop\SIH2
 com.example.psychalyzergpt.app-mergeDebugResources-20 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
 com.example.psychalyzergpt.app-merged_res-21 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\app\intermediates\merged_res\debug
 com.example.psychalyzergpt.app-packaged_res-22 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\packaged_res\debug
-com.example.psychalyzergpt.app-packaged_res-23 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\packaged_res\debug
-com.example.psychalyzergpt.app-packaged_res-24 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\packaged_res\debug
+com.example.psychalyzergpt.app-packaged_res-23 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\packaged_res\debug
+com.example.psychalyzergpt.app-packaged_res-24 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\packaged_res\debug
+com.example.psychalyzergpt.app-packaged_res-25 C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\packaged_res\debug

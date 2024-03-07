@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ASUS\.gradle\caches\transforms-3\df21ce4911a384f00819e65786c99d2c\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:26:5-79
 16-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ASUS\.gradle\caches\transforms-3\df21ce4911a384f00819e65786c99d2c\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:26:22-76
@@ -87,31 +87,31 @@
 67            android:value="2" />
 68
 69        <service
-69-->[:firebase_auth] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+69-->[:firebase_auth] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[:firebase_auth] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+70-->[:firebase_auth] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 71            android:directBootAware="true"
 71-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\transforms-3\9d7c0800414111f9ad639247ad3b3c3f\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 72            android:exported="false" >
 72-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ASUS\.gradle\caches\transforms-3\df21ce4911a384f00819e65786c99d2c\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:68:13-37
 73            <meta-data
-73-->[:firebase_auth] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+73-->[:firebase_auth] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-74-->[:firebase_auth] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+74-->[:firebase_auth] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_auth] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+75-->[:firebase_auth] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 76            <meta-data
-76-->[:cloud_firestore] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+76-->[:cloud_firestore] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-77-->[:cloud_firestore] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+77-->[:cloud_firestore] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:cloud_firestore] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+78-->[:cloud_firestore] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 79            <meta-data
-79-->[:firebase_core] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+79-->[:firebase_core] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-80-->[:firebase_core] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+80-->[:firebase_core] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_core] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+81-->[:firebase_core] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 82            <meta-data
 82-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ASUS\.gradle\caches\transforms-3\df21ce4911a384f00819e65786c99d2c\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:69:13-71:85
 83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -163,13 +163,13 @@
 106        </service>
 107
 108        <activity
-108-->[:url_launcher_android] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+108-->[:url_launcher_android] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
 109            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-109-->[:url_launcher_android] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+109-->[:url_launcher_android] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 110            android:exported="false"
-110-->[:url_launcher_android] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+110-->[:url_launcher_android] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 111            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-111-->[:url_launcher_android] C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+111-->[:url_launcher_android] C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
 112        <activity
 112-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\ASUS\.gradle\caches\transforms-3\df21ce4911a384f00819e65786c99d2c\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:29:9-46:20
 113            android:name="com.google.firebase.auth.internal.GenericIdpActivity"

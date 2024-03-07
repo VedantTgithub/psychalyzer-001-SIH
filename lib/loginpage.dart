@@ -7,6 +7,7 @@ import 'parentdashb.dart';
 import 'counsellordashb.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'client.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -53,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
           case 'Counsellor':
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => CounselDashboard()),
+              MaterialPageRoute(builder: (context) => ClientList(user: user)),
             );
             break;
           default:

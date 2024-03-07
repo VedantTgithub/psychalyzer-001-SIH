@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'counsellogin.dart';
+import 'loginpage.dart';
 
 final Color blueViolet = Color(0xFF8A2BE2);
 
@@ -29,7 +30,7 @@ class CounselDashboard extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => counselLoginPage(),
+                  builder: (context) => LoginPage(),
                 ),
               );
             },

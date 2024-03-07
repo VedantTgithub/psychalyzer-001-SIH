@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=C:\src\flutter
-FLUTTER_APPLICATION_PATH=C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH
+FLUTTER_ROOT=C:\Users\ASUS\flutter
+FLUTTER_APPLICATION_PATH=C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib\main.dart
 FLUTTER_BUILD_DIR=build

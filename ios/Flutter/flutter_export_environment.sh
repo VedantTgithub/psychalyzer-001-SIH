@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\src\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\ASUS\Desktop\SIH23\psychalyzer-001-SIH"
+export "FLUTTER_ROOT=C:\Users\ASUS\flutter"
+export "FLUTTER_APPLICATION_PATH=C:\Users\ASUS\Desktop\Projects\SIH23\psychalyzer-001-SIH"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"

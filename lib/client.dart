@@ -1,40 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: StreamBuilder(
-        stream: FirebaseAuth.instance.authStateChanges(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
-          } else {
-            if (snapshot.hasData) {
-              // User is logged in
-              User? user = FirebaseAuth.instance.currentUser;
-              if (user != null) {
-                return ClientList(user: user);
-              } else {
-                // User is not logged in
-                return LoginPage();
-              }
-            } else {
-              // User is not logged in
-              return LoginPage();
-            }
-          }
-        },
-      ),
-    );
-  }
-}
+import 'client_details.dart';
+import 'loginpage.dart'; // Import the LoginPage class
 
 class ClientList extends StatelessWidget {
   final User user;
@@ -46,6 +14,42 @@ class ClientList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Client List'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () async {
+              try {
+                await FirebaseAuth.instance.signOut();
+                // Navigate to the LoginPage and remove all routes below it
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                  (route) => false,
+                );
+              } catch (e) {
+                // Handle logout error
+                print('Logout error: $e');
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text('Logout Error'),
+                      content: Text('An error occurred during logout.'),
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pop(context); // Close the alert dialog
+                          },
+                          child: Text('OK'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              }
+            },
+          ),
+        ],
       ),
       body: FutureBuilder<DocumentSnapshot>(
         future:
@@ -79,27 +83,39 @@ class ClientList extends StatelessWidget {
 
                     // Check if family code matches with logged-in user's family code
                     if (familyCode == userFamilyCode) {
-                      return Card(
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        child: ListTile(
-                          contentPadding: EdgeInsets.all(20),
-                          leading: CircleAvatar(
-                            child:
-                                Text('${index + 1}'), // Display client number
+                      final userId = document.id; // Get userId from document
+
+                      return GestureDetector(
+                        onTap: () {
+                          // Navigate to client details page
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ClientDetailsPage(
+                                clientData: data,
+                                userId: userId, // Pass userId here
+                              ),
+                            ),
+                          );
+                        },
+                        child: Card(
+                          margin: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 20),
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
                           ),
-                          title:
-                              Text(data['name'] ?? ''), // Display client name
-                          subtitle:
-                              Text(data['email'] ?? ''), // Display client email
-                          onTap: () {
-                            // Handle onTap event for each client
-                            // For example, navigate to client details page
-                          },
+                          child: ListTile(
+                            contentPadding: EdgeInsets.all(20),
+                            leading: CircleAvatar(
+                              child:
+                                  Text('${index + 1}'), // Display client number
+                            ),
+                            title:
+                                Text(data['name'] ?? ''), // Display client name
+                            subtitle: Text(
+                                data['email'] ?? ''), // Display client email
+                          ),
                         ),
                       );
                     }
@@ -110,21 +126,6 @@ class ClientList extends StatelessWidget {
             },
           );
         },
-      ),
-    );
-  }
-}
-
-class LoginPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // Your login page implementation
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Login'),
-      ),
-      body: Center(
-        child: Text('Login Page'),
       ),
     );
   }

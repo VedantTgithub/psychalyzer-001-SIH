@@ -24,7 +24,7 @@ class QuizListPage extends StatelessWidget {
             return Center(child: CircularProgressIndicator());
           }
 
-          final List<DocumentSnapshot> quizDocuments = snapshot.data!.docs;
+          final List<QueryDocumentSnapshot> quizDocuments = snapshot.data!.docs;
 
           if (quizDocuments.isEmpty) {
             return Center(child: Text('No quizzes available'));
@@ -33,16 +33,18 @@ class QuizListPage extends StatelessWidget {
           return ListView.builder(
             itemCount: quizDocuments.length,
             itemBuilder: (context, index) {
-              final quizNumber = index + 1;
+              final quizDocument = quizDocuments[index];
+              final quizDocId = quizDocument.id;
+
               return ListTile(
-                title: Text('Quiz $quizNumber'),
+                title: Text('Quiz ${index + 1}'),
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => QuizDetailsPage(
                         userId: userId,
-                        quizNumber: quizNumber,
+                        quizDocId: quizDocId,
                       ),
                     ),
                   );

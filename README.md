@@ -16,3 +16,7 @@ Psychalyzer is a comprehensive software solution designed to monitor, assess, an
 
 ## Scoring and Reporting: 
 - Generate scores and graphical reports for analysis, enabling the identification of potential disorders and personality traits.
+
+
+## Youtube demo video
+- https://youtu.be/SKktKs7cGeU?si=V1xTEZ8B8YzKTkAe
